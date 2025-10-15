@@ -1,0 +1,60 @@
+:root{
+--bg:#f7fbff;
+--primary:#0b3954;
+--accent:#1687a7;
+--muted:#6b7280;
+--card:#ffffff;
+--radius:10px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body,#app{height:100%}
+body{
+margin:0;
+background:linear-gradient(180deg,#eef7fb, var(--bg));
+color:#0d1b2a;
+}
+
+.app-header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 16px;
+background:var(--card);
+box-shadow:0 6px 18px rgba(11,57,84,0.08);
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.app-header h1{margin:0;font-size:18px}
+.app-header button{background:none;border:0;font-size:18px}
+
+main{padding:12px;max-width:900px;margin:0 auto}
+
+.overview{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}
+.user-info div{font-size:14px;color:var(--muted)}
+
+.summary{font-size:13px;color:var(--muted)}
+
+.days-nav{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px}
+.day-btn{flex:0 0 auto;padding:8px 12px;background:var(--card);border-radius:8px;border:1px solid #e6eef6;cursor:pointer}
+.day-btn.active{background:var(--primary);color:white}
+
+.day-view{background:var(--card);border-radius:var(--radius);padding:12px;box-shadow:0 6px 16px rgba(11,57,84,0.06)}
+.exercise{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed #eef6fb}
+.exercise:last-child{border-bottom:0}
+.ex-name{font-weight:600}
+.ex-sets{font-size:13px;color:var(--muted)}
+
+.footer{display:flex;justify-content:space-between;align-items:center;padding:12px;margin-top:12px}
+.footer button{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:white}
+#timer-display{font-weight:700;color:var(--primary)}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;padding:20px}
+.modal.hidden{display:none}
+.modal-inner{background:var(--card);padding:16px;border-radius:12px;max-width:420px;width:100%}
+.modal label{display:block;margin-bottom:10px;font-size:14px}
+.modal input[type="number"], .modal select{width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #dbeef7}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
