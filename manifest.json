@@ -1,0 +1,13 @@
+{
+"short_name": "Muscle6",
+"name": "6-Day Muscle Gain Workout",
+"icons": [
+{ "src": "assets/icon-192.png", "type": "image/png", "sizes": "192x192" },
+{ "src": "assets/icon-512.png", "type": "image/png", "sizes": "512x512" }
+],
+"start_url": "/",
+"display": "standalone",
+"background_color": "#f7fbff",
+"theme_color": "#0b3954",
+"description": "40min lifting + 20min cardio daily — 6-day split for muscle gain."
+}
